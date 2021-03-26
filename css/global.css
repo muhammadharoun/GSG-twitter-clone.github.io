@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Ubuntu;
+}
+
+.brand {
+  border: 0 solid black;
+  height: 28px;
+  filter: invert(46%) sepia(99%) saturate(1449%) hue-rotate(176deg) brightness(100%) contrast(91%);
+  padding: 10px;
+}
+
+
+/* -------------- Strat layout -------------- */
+.layout {
+  display: grid;
+  grid-template-columns: 275px auto 350px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.right_sidebar{
+  position: fixed;
+  width: 350px;
+  margin-left: 27px;
+}
+
+/*--------------  Finsh layout -------------- */
+
+
+
+
+/* --------------Start sidebar menu -------------- */
+.sidebar_menu {
+  position: fixed;
+}
+
+.sidebar_menu_item {
+  font-size: 19px;
+  color: #0F141A;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.sidebar_menu_item:hover {
+  background: rgba(29, 161, 242, 0.1);
+  color: #1da0f2;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.active {
+  color: #1da0f2;
+}
+
+.icon {
+  height: 26px;
+  margin-right: 20px;
+}
+
+.active .icon {
+  filter: invert(67%) sepia(60%) saturate(4956%) hue-rotate(176deg) brightness(95%) contrast(99%);
+}
+/* -------------- Finsh sidebar menu --------------*/
+
+
+
+/* -------------- Start shaere box --------------*/
+
+.share_btn{
+    background: #1da0f2;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    margin-left: 86%;
+    margin-bottom: 45px;
+}
+#myUsername{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    background-image: url(bg.gif);
+    background-position: bottom right;
+    background-repeat: no-repeat;  color: black;
+}
+
+#myInput{
+    resize: none;
+    outline: none;
+	width: 96%;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+	background-image: url(bg.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+/*    background-color: rgb(29,160,242,63.9%);*/
+}
+
+
+/* -------------- Finsh shaere box --------------*/
+
+
+/* -------------- Start Tweet --------------*/
+
+.tweet {
+  display: flex;
+  border-bottom: 1px solid #e6ecf0;
+  border-left: 1px solid #e6ecf0;
+  border-right: 1px solid #e6ecf0;
+  margin-bottom: 2px;
+  padding: 10px 15px;
+}
+
+.tweet:hover {
+  background: rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+}
+
+.tweet a {
+  color: #1b94e0;
+  text-decoration: none;
+
+}
+
+.tweet a:hover {
+  text-decoration: underline;
+}
+
+.tweet_logo{
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  margin-right: 10px;
+    
+}
+
+.tweet_header {
+  display: flex;
+}
+
+.tweet_name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #14171a;
+  margin-right: 5px;
+}
+
+.tweet_slug {
+  color: #5b7083;
+  font-size: 15px;
+}
+
+.tweet_time {
+  margin-left: 5px;
+  color: #657786;
+}
+
+.content{
+    width: 400px;
+    word-wrap: break-word;
+}
+
+/* -------------- Finsh Tweet --------------*/
+
+/* -------------- Start search --------------*/
+.search {
+    width: 84%;
+    height: 50px;
+    /* background-color: red; */
+    border-radius: 50px;
+    margin-bottom: 25px;
+    border: 1px solid #e6ecf0;
+    display: flex;
+
+}
+.search-logo{
+    width: 20%;
+    text-align: center;
+    margin-top: 13px;
+}
+.search-field > input[type=text], select {
+        width: 100%;
+        height: 100%;
+        padding: 12px 20px;
+        display: inline-block;
+        border: none;
+        box-sizing: border-box;
+      }
+
+
+.search-field > input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+
+*:focus {
+    outline: none;
+}
+/* -------------- Finsh search --------------*/
+
+
+/* -------------- Start trends for you --------------*/
+.trends_for_you {
+  border-radius: 15px;
+  background: #f5f8fa;
+  margin-bottom: 15px;
+  width: 84%;
+}
+
+.trends_for_you_block {
+  border-bottom: 1px solid #e6ecf0;
+  padding: 10px 15px;
+}
+
+.trends_for_you_block:last-child {
+  border-bottom: none;
+}
+
+.trends_for_you_heading {
+  font-size: 19px;
+  font-weight: bold;
+  color: #14171a;
+}
+
+.trends_for_you_information {
+  font-size: 13px;
+  font-weight: 300;
+  color: #657786;
+}
+
+.trends_for_you_name {
+  font-size: 15px;
+  color: #14171a;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
+
+/* -------------- Finsh trends for you --------------*/
+
+
+
+
+
+/* -------------- Start who to follow--------------*/
+
+
+.who_to_follow {
+  background: #f5f8fa;
+  border-radius: 15px;
+  width: 84%;
+}
+
+
+.who_to_follow_block {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e6ecf0;
+}
+
+.who_to_follow_block:last-child {
+  border-bottom: none;
+}
+
+.who_to_follow_author_logo {
+  width: 49px;
+  height: 49px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.who_to_follow_author_slug {
+  color: #657786;
+  font-size: 15px;
+}
+
+.who_to_follow_author_name {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.who_to_follow_content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.who_to_follow_heading {
+  font-size: 19px;
+  font-weight: bold;
+  color: #14171a;
+}
+
+.who_to_follow_button {
+  border: 1px solid #1da0f2;
+  color: #1da0f2;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 15px;
+  padding: 5px;
+  min-width: 67px;
+  text-align: center;
+}
+
+.who_to_follow_button:hover {
+  background: rgba(29, 161, 242, 0.1);
+  cursor: pointer;
+}
+
+/* -------------- Finsh who to follow --------------*/
+
+
+
+
+
+
+
+
+
+
